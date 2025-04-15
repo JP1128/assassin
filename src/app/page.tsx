@@ -6,10 +6,15 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState } from "react";
 
+interface Assassin {
+  name: string;
+  code: string;
+}
+
 export default function Home() {
   const [name, setName] = useState("");
   const [code, setCode] = useState("");
-  const [assassins, setAssassins] = useState([]);
+  const [assassins, setAssassins] = useState<Assassin[]>([]);
 
   useEffect(() => {
     const getUsers = async () => {
