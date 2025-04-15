@@ -30,7 +30,7 @@ export default function Home() {
             type="submit"
             onClick={async () => {
               try {
-                const res = await fetch("/api/users", {
+                await fetch("/api/users", {
                   method: "POST",
                   body: JSON.stringify({
                     name: name,
