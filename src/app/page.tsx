@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-svh w-full items-center justify-center p-6 md:p-10">
-      <div className="flex flex-col w-sm mb-4">
+      <div className="flex flex-col max-w-sm mb-4">
         <h1 className="text-lg font-semibold text-slate-700">UGA Assassin&apos;s Game</h1>
         <h2 className="text-md font-medium text-slate-500 mt-2 mb-1">Rules:</h2>
         <ul className="text-xs font-normal text-slate-400 list-disc list-inside space-y-1">
